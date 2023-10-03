@@ -9,9 +9,10 @@ Large outliers where massively more emissions were recorded could skew the model
 
 ![alt text](./outliers.PNG "Emission outliers")
 
-Visualizing where most carbon emissions occured by mapping mean emissions to longitude / latitude coordinates. Color and size both correlate to the amount of emissions over the entire time period
+Visualizing where most carbon emissions occured by mapping mean emissions to longitude / latitude coordinates. On the first map, color and size both correlate to the amount of emissions over the entire time period. On the second map, I used plotly express to better visualize the emissions across the country.
 
 ![alt text](./map_emissions.PNG "Emissions on map")
+![alt text](./map_plotly_emissions.PNG "Emissions on map 2")
 
 Visualizing emissions over time reveals a somewhat cyclical pattern where emissions are highest in May and November.
 
