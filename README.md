@@ -5,7 +5,6 @@ Kaggle competition to predict CO2 emissions in Rwanda
 - Create a model to predict future CO2 emissions using open source data from Rwanda
 
 ## Outcome
-- 
 |feature|importance %|
 |-|-|
 |latitude|0.444169|
@@ -32,9 +31,16 @@ Visualizing emissions over time reveals a somewhat cyclical pattern where emissi
 
 ## Model building
 I tried three different models (Decision Tree, Linear Regression, Random Forest Regressor). I didn't expect the linear model to do well due to the nature of the data, which was confirmed when running the model. I then repeated this three times: Once for all the data, once for data without outliers beyond 99.5% of range of values, and one only containing only the most important features from the previous two runs: Latitude, Longitude, Year, Week.
+|	|importance %|
+|-|-|
+|longitude|0.46|
+|latitude|0.44|
+|week_no|0.007900|
+|year|0.003809|
+| ... | ... |
 
 ## Model performance
-The Random Forest outperformed the single Decision Tree by a small margin in every version. I used mean squared error for evaluation because it gives us a good idea as to how close we are to the actual values and in this particular problem we want accurate predictions:
+The Random Forest outperformed the single Decision Tree by a small margin in every version. I used root mean squared error for evaluation because the rmsq is easily understandable and comparable to the target variable.
 | | Without outliers | With outliers | Only most important features |
 |-|-|-|-|
 |Decision Tree|26.6|38.7|17.5|
