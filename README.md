@@ -35,8 +35,8 @@ I tried three different models (Decision Tree, Linear Regression, Random Forest 
 |-|-|
 |longitude|0.46|
 |latitude|0.44|
-|week_no|0.007900|
-|year|0.003809|
+|week_no|0.008|
+|year|0.004|
 | ... | ... |
 
 ## Model performance
