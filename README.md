@@ -16,15 +16,15 @@ Kaggle competition to predict CO2 emissions in Rwanda
 # EDA
 Large outliers where massively more emissions were recorded could skew the model
 
-[alt text](./outliers.PNG "Emission outliers")
+![alt text](./outliers.PNG "Emission outliers")
 
 Visualizing where most carbon emissions occured by mapping mean emissions to longitude / latitude coordinates. Color and size both correlate to the amount of emissions over the entire time period
 
-[alt text](./map_emissions.PNG "Emissions on map")
+![alt text](./map_emissions.PNG "Emissions on map")
 
 Visualizing emissions over time reveals a somewhat cyclical pattern where emissions are highest in May and November.
 
-[alt text(./emissions_by_year.PNG "Emissions by year")
+![alt text](./emissions_by_year.PNG "Emissions by year")
 
 ## Feature engineering / data cleaning
 - The dataset contained some missing values. Where values were missing for most observations (UvAerosol*), features were dropped. For others where only a fraction of observations were missing, I used SkLearn's SimpleImputer to impute missing values with the mean.
