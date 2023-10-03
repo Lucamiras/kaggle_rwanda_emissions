@@ -4,14 +4,6 @@ Kaggle competition to predict CO2 emissions in Rwanda
 ## Goal
 - Create a model to predict future CO2 emissions using open source data from Rwanda
 
-## Outcome
-|feature|importance %|
-|-|-|
-|latitude|0.444169|
-|longitude|0.463098|
-|year|0.003846|
-|week_no|0.008523|
-
 # EDA
 Large outliers where massively more emissions were recorded could skew the model
 
